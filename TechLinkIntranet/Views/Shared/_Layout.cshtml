@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TLIntranet</title>
+    <link href="~/libs/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/libs/bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="~/libs/Font/css/fontawesome.css" rel="stylesheet" />
+    <link href="~/libs/Site/Site.css" rel="stylesheet" />
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>*@
+
+    <script src="~/libs/jquery/jquery.min.js"></script>
+
+</head>
+<body>
+    @*<style>
+        body {
+            width: 100%;
+            margin: auto;
+            min-width: 600px;
+            max-width: 2000px
+        }
+    </style>*@
+    @*<nav class="navbar navbar-expand-lg bg-white text-primary">
+        <div class="row">
+            <div class="col">
+                <img src="~/libs/Images/logo3.jpg" alt="Logo" style="width:300px;" />
+            </div>
+            <div class="col-4">
+               TECH-LINK INTRANET
+            </div>
+
+        </div>*@
+
+
+    @*</nav>*@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3"><img src="~/libs/Images/logo3.jpg" alt="Logo" style="width:200px;" /></div>
+        <div class="col-7">
+            <h1 class="text-center text-success fa-bold"> <b>TECH-LINK INTRANET</b></h1>
+        </div>
+        <div class="col-2 text-info fa fa-clock">
+            
+            <h5> @DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss")</h5>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand bg-primary text-white my-3">
+
+        <a class="navbar-brand text-white" href="#">TechLink-Intranet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    MQC Report
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item active" asp-area="" asp-controller="Home" asp-action="Index">Hose's MQC Monitoring</a>
+                    <a class="dropdown-item active" asp-area="" asp-controller="Home" asp-action="Index">MQC Report</a>
+                    <a class="dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Index">MQC Analysis</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Production Report
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item active" asp-area="" asp-controller="Production" asp-action="Backlog">Back-log Report</a>
+                    <a class="dropdown-item active" asp-area="" asp-controller="Production" asp-action="Reliability">Reliability Report</a>
+                    <a class="dropdown-item disabled" asp-area="" asp-controller="Production" asp-action="Index">Production Analysis</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Production Report
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item active" asp-area="" asp-controller="Warehouse" asp-action="InStock">In-Stock</a>
+                    <a class="dropdown-item active" asp-area="" asp-controller="Warehouse" asp-action="OutStock">Out-Stock</a>
+                    <a class="dropdown-item disabled" asp-area="" asp-controller="Warehouse" asp-action="FinishedGoods">Finished-Goods</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                   Test
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item active" asp-area="" asp-controller="Test" asp-action="Table">Table</a>
+                    <a class="dropdown-item active" asp-area="" asp-controller="Warehouse" asp-action="OutStock">Out-Stock</a>
+                    <a class="dropdown-item disabled" asp-area="" asp-controller="Warehouse" asp-action="FinishedGoods">Finished-Goods</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2020 - TLIntranet</p>
+        </footer>
+    </div>
+
+    <environment include="Development">
+
+        <script src="~/libs/bootstrap/js/bootstrap.js"></script>
+        <script src="~/libs/jquery/jquery.js"></script>
+
+    </environment>
+
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

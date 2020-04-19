@@ -1,2 +1,2 @@
-# TLIntranet
-make Intranet for Tech-link siliconces VN
+# TECHLINK.INTRANET
+Make Intranet for TECH-LINK SILICONCES VIET NAM
