@@ -24,7 +24,7 @@ using TechLinkIntranet.Models;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9cdf919f6a07ff8b430eb518d75616cb123ab01c", @"/Views/Report/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7087f3556ee938ca08c724b6716eb81619f8543a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8e6bde500cdc72c9259d17cb49258790c01ee1a1", @"/Views/_ViewImports.cshtml")]
     public class Views_Report_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -57,7 +57,7 @@ using TechLinkIntranet.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(62, 118, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2e94ab6988a443c0be71d0226e0e44fd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "93aab88d26944f0dba3984456f126ad8", async() => {
                 BeginContext(68, 105, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Index Production Report</title>\r\n");
                 EndContext();
@@ -77,7 +77,7 @@ using TechLinkIntranet.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(182, 44, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7570b8e9142f419f8821d8f86ce578f2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc6df7944f364a4fa8bd4a1571150bf9", async() => {
                 BeginContext(188, 31, true);
                 WriteLiteral("\r\n    Index Production Report\r\n");
                 EndContext();

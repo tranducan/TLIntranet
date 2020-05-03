@@ -8,9 +8,11 @@
     <link href="~/libs/bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
     <link href="~/libs/Font/css/fontawesome.css" rel="stylesheet" />
     <link href="~/libs/Site/Site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>*@
 
     <script src="~/libs/jquery/jquery.min.js"></script>
+    @RenderSection("Styles", required: false)
 
 </head>
 <body>
@@ -37,7 +39,7 @@
     @*</nav>*@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-3"><img src="~/libs/Images/logo3.jpg" alt="Logo" style="width:200px;" /></div>
+        <div class="col-3"><img class="img-fluid" src="~/libs/Images/logo3.jpg" alt="Logo" style="width:200px;" /></div>
         <div class="col-7">
             <h1 class="text-center text-success fa-bold"> <b>TECH-LINK INTRANET</b></h1>
         </div>
@@ -47,55 +49,62 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand bg-primary text-white my-3">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-        <a class="navbar-brand text-white" href="#">TechLink-Intranet</a>
+        <a class="navbar-brand text-white fas fa-home" href="#">
+            <img class="img-fluid" src="~/libs/Images/logo3.jpg" alt="Logo" style="width:100px;" />
+             
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                <button type="button" class="btn btn-success text-white dropdown-toggle fas fa-suitcase" data-toggle="dropdown">
                     MQC Report
                 </button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item active" asp-area="" asp-controller="Home" asp-action="Index">Hose's MQC Monitoring</a>
-                    <a class="dropdown-item active" asp-area="" asp-controller="Home" asp-action="Index">MQC Report</a>
+                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Hose's MQC Monitoring</a>
+                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">MQC Report</a>
                     <a class="dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Index">MQC Analysis</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                <button type="button" class="btn btn-success text-white dropdown-toggle fas fa-share" data-toggle="dropdown">
                     Production Report
                 </button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item active" asp-area="" asp-controller="Production" asp-action="Backlog">Back-log Report</a>
-                    <a class="dropdown-item active" asp-area="" asp-controller="Production" asp-action="Reliability">Reliability Report</a>
+                    <a class="dropdown-item" asp-area="" asp-controller="Production" asp-action="Backlog">Back-log Report</a>
+                    <a class="dropdown-item" asp-area="" asp-controller="Production" asp-action="Reliability">Reliability Report</a>
                     <a class="dropdown-item disabled" asp-area="" asp-controller="Production" asp-action="Index">Production Analysis</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    Production Report
+                <button type="button" class="btn btn-success text-white dropdown-toggle fas fa-warehouse" data-toggle="dropdown">
+                    Ware house
                 </button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item active" asp-area="" asp-controller="Warehouse" asp-action="InStock">In-Stock</a>
-                    <a class="dropdown-item active" asp-area="" asp-controller="Warehouse" asp-action="OutStock">Out-Stock</a>
+                    <a class="dropdown-item" asp-area="" asp-controller="Warehouse" asp-action="InStock">In-Stock</a>
+                    <a class="dropdown-item" asp-area="" asp-controller="Warehouse" asp-action="OutStock">Out-Stock</a>
                     <a class="dropdown-item disabled" asp-area="" asp-controller="Warehouse" asp-action="FinishedGoods">Finished-Goods</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                   Test
+                <button type="button" class="btn btn-success text-white dropdown-toggle fas fa-democrat" data-toggle="dropdown">
+                    Test
                 </button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item active" asp-area="" asp-controller="Test" asp-action="Table">Table</a>
-                    <a class="dropdown-item active" asp-area="" asp-controller="Warehouse" asp-action="OutStock">Out-Stock</a>
+                    <a class="dropdown-item" asp-area="" asp-controller="Test" asp-action="Table">Table</a>
+                    <a class="dropdown-item" asp-area="" asp-controller="Chart" asp-action="Index">Dashboard</a>
                     <a class="dropdown-item disabled" asp-area="" asp-controller="Warehouse" asp-action="FinishedGoods">Finished-Goods</a>
                 </div>
             </div>
 
         </div>
+        <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
     </nav>
 </div>
     <div class="container body-content">

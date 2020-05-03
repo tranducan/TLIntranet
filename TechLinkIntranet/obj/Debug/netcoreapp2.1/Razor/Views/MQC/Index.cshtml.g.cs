@@ -24,7 +24,7 @@ using TechLinkIntranet.Models;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6679f5ac477f5331f77e6403b851a17f9e7a1ab0", @"/Views/MQC/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7087f3556ee938ca08c724b6716eb81619f8543a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8e6bde500cdc72c9259d17cb49258790c01ee1a1", @"/Views/_ViewImports.cshtml")]
     public class Views_MQC_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -57,7 +57,7 @@ using TechLinkIntranet.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(62, 111, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d5ba84cdca934d8bbec35640d759e45c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "796ddfe23b39412ebc0c9e520fe02eb2", async() => {
                 BeginContext(68, 98, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Index MQC Report</title>\r\n");
                 EndContext();
@@ -77,7 +77,7 @@ using TechLinkIntranet.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(175, 46, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e66f99ee07c4dd987b4170c146b9864", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "41fad7611aef427380a380fee84ccc43", async() => {
                 BeginContext(181, 33, true);
                 WriteLiteral("\r\n    <h1>Index MQC Report</h1>\r\n");
                 EndContext();

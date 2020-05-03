@@ -28,3 +28,5 @@ E:\job\tech-link\Project\TLIntranet\TechLinkIntranet\TechLinkIntranet\obj\Debug\
 E:\job\tech-link\Project\TLIntranet\TechLinkIntranet\TechLinkIntranet\obj\Debug\netcoreapp2.1\Razor\Views\Report\Index.cshtml.g.cs
 E:\job\tech-link\Project\TLIntranet\TechLinkIntranet\TechLinkIntranet\obj\Debug\netcoreapp2.1\Razor\Views\MQC\Index.cshtml.g.cs
 E:\job\tech-link\Project\TLIntranet\TechLinkIntranet\TechLinkIntranet\obj\Debug\netcoreapp2.1\Razor\Views\Test\Table.cshtml.g.cs
+E:\job\tech-link\Project\TLIntranet\TechLinkIntranet\TechLinkIntranet\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\Index.cshtml.g.cs
+E:\job\tech-link\Project\TLIntranet\TechLinkIntranet\TechLinkIntranet\obj\Debug\netcoreapp2.1\Razor\Views\Chart\Index.cshtml.g.cs
